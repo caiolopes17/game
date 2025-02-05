@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--aqui ficam os conteudos -->
+    <meta name="description" content="">
+    <!--aqui ficam as palavras chaves do nosso site (servem para o google filtrar os conteudos do site)-->
+    <meta name="keywords" content="">
+    <!--aqui fica o titulo-->
+    <title>Document</title>
+    <!--aqui fica nosso icon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--aqui fica o css-->
+    <link rel="stylesheet" href="style.css">
+    <!--link css bootstrap-->
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+
+    <!--1 parte: 
+   entramos no site do bootstrap, que serve para desenvolvimento de htlm, js, e css, e serve para criar site repulsivos-->
+    <!--parte 2: 
+    https://getbootstrap.com.br/docs/4.1/layout/overview/
+    esse site abre para voce saber qual .link usar casa um.-->
+    <!--o gid divide o site em 12 colunas, caso queira 1 coluna --col - sm 2 (pega 2 colunas) ---->
+
+
+</head>
+
+<style>
+    * {
+        line-height: 1.2;
+    }
+</style>
+
+<body>
+    <!--quando nos temos o contanier-fluid, a barara vai ate o final-->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="O logo é um controle de vídeo game"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Consoles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="ps.html">PS</a>
+                            <a class="dropdown-item" href="xbox.html">Xbox</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mídias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="fotos.html">Fotos</a>
+                            <a class="dropdown-item" href="videos.html">Vídeos</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+
+        <!--Banner-->
+
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/banner-gears.jpg" alt="Jogo Gears of War">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/banner1.jpg" alt="Jogo God Of War">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/banner2.jpg" alt="Jogo God Of War">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <!--cards-->
+        <!--formulario-->
+        <section class="container bg-dark py-3">
+            <h1 class="text-center text-light pb-3">entre em contato conosco</h1>
+            <div class="row">
+                <div class="col-md-8 text-light">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="Email" class="form-control text-dark" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+
+                                <input type="Email" class="form-control" id="inputEmail4" placeholder="Nome">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control text-dark" id="inputAddress"
+                                placeholder="Nome da rua, nº 123">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control text-dark" placeholder="cidade" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <select id="inputEstado" class="form-control text-dark">
+                                    <option selected> São Paulo</option>
+                                    <option value=""> Rio de Janeiro</option>
+                                    <option>Minas Gerais</option>
+                                    <option>Espirito Santo</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+
+                                <input placeholder="CEP" type="text" class="form-control" id="inputCEP">
+
+                            </div>
+                            <div class="col-md-12">
+                                <textarea placeholder="escreva sua mensagem aqui (opcional)" class="form-control"
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Limpar </button>
+                        </div>
+                </div>
+
+
+                </form>
+
+                <div class="col-md-4 text-center item-center">
+                    <img src="img/jogo-mario.jpg" alt="Jogo Mario Bros" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <!--rodape-->
+        <footer class="bg-dark text-light">
+            <div class="row text-center py-3 d-flex flex-sm-colum flex-lg-row align-items-center">
+                <div class="col-sm-4  d-none d-lg-block padding">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.765972159767!2d-46.577542724546895!3d-23.540918260841668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec26cfdcfed%3A0x49e7eb66fd4f1f2!2sSenac%20Tatuap%C3%A9%20-%20Cel.%20Lu%C3%ADs%20Americano!5e0!3m2!1spt-BR!2sbr!4v1738191676624!5m2!1spt-BR!2sbr"
+                        width="400" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <img src="img/local.png" alt="endereço do local">
+                    <p>
+                        Nome da Rua, 123 <br>
+                        Nome do Bairro <br>
+                        São Paulo
+                    </p>
+                    <a href="mailto:seugmail@gmail.com?subject=game">
+                        <img src="img/email.png" alt="enviar email">
+                    </a>
+                    <p>seuemail@gmail.com</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="https://api.whatsapp.com/sen?phone=5511124-1904" target="_blank">
+                        <img src="img/whatsapp.png" alt="iniciar conversa com o whatsapp">
+                    </a>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>(11) 01234-1234</p>
+                    <img src="img/fone.png" alt="telefone">
+                    <p>(11) 01234-1234</p>
+                </div>
+            </div>
+        </footer>
+        <!--redes sociais-->
+        <div>
+            <div>
+                <p>&#169; Somente para fins educativo</p>
+            </div>
+            <div>
+                <a href="">
+                    <img src="img/linkedin.png" target="_blank" alt="linkedin">
+                </a>
+                <a href="">
+                    <img src="img/instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/youtube.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!--a ordem desses scripts deve ser 1:jquery 2:popper 3:bootstrap JS-->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
